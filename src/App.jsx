@@ -7,7 +7,7 @@ const App = () => {
   const [mode, setMode] = useState("light");
 
   const toggleMode = () => {
-    setMode((prev) => (prev === "light" ? "dark" : "light"));c
+    setMode((prev) => (prev === "light" ? "dark" : "light"));
     document.body.style.backgroundColor =
       mode === "light" ? "#333" : "white";
   };
