@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavBar";
 import News from "./components/news";
-
 const App = () => {
   const [mode, setMode] = useState("light");
-
   const toggleMode = () => {
     setMode((prev) => (prev === "light" ? "dark" : "light"));
     document.body.style.backgroundColor =
@@ -13,8 +11,8 @@ const App = () => {
   };
 
   const categories = [
-    "general","business","entertainment",
-    "health","science","sports","technology",
+    "general", "business", "entertainment",
+    "health", "science", "sports", "technology",
   ];
 
   return (
