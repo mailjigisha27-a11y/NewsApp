@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import News from "./components/News";
-
+import Navbar from "./components/NavBar";
+import News from "./components/news";
 const App = () => {
   const [mode, setMode] = useState("light");
   const toggleMode = () => {
